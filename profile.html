@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perfil - Plataforma de Mentoría Lumen</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo Mentoría Lumen">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashbord.html">Dashboard</a></li>
+                <li><a href="#" class="logoutButton">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="profile">
+        <div class="profile-container">
+            <div class="profile-header">
+                <h2>Tu Perfil</h2>
+                <p>Gestiona tu información personal aquí.</p>
+            </div>
+            
+            <div class="profile-wrapper">
+                <div class="profile-image">
+                    <img src="images/pexels-shvetsa-4226256.jpg" alt="Foto de perfil">
+                </div>
+
+                <div class="profile-form">
+                    <form action="#">
+                        <label for="name">Nombre Completo:</label>
+                        <input type="text" id="name" name="name" value="[Usuario]" required>
+
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" value="[Correo]" required>
+
+                        <label for="password">Cambiar Contraseña:</label>
+                        <input type="password" id="password" name="password">
+
+                        <button type="submit" class="cta-button">Actualizar Perfil</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/profile.js"></script>
+    <script src="js/logout.js"></script>
+
+    <footer>
+        <p>&copy; 2025 Plataforma de Mentoría Lumen | Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

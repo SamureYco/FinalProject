@@ -1,0 +1,344 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+    
+}
+/* Para las imagenes */
+.gallery {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  
+  .gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  }
+  
+
+/* General header layout */
+header {
+    background-color: #222;
+    padding: 1rem 2rem;
+    color: white;
+
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* para que se acomode en pantallas pequeñas */
+  }
+  
+  /* Logo + nombre */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .logo {
+    width: 70px;
+    height: auto;
+  }
+  
+  .titulo-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .slogan {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #ccc;
+  }
+  
+  /* Nav links */
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-list li a {
+    color: #eee;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  
+  .nav-list li a:hover {
+    color: #00c3ff;
+  }
+  
+  /* Botones especiales (register/login) */
+  .nav-button {
+    background-color: #00c3ff;
+    color: #111;
+    padding: 6px 14px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .nav-button:hover {
+    background-color: #0099cc;
+    color: white;
+  }
+  
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #FFB13B;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('/images/pexels-thirdman-5060979.jpg'); /* Cambia a la imagen que elijas */
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 2rem;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* Oscurece la imagen para que el texto resalte */
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-btn {
+    padding: 0.8rem 1.5rem;
+    background-color: #1e3a8a; /* Azul oscuro o el color que elijas */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+  }
+  
+
+/* Sections */
+section {
+    padding: 80px 20px;
+    text-align: center;
+    background: #fff;
+    margin: 20px 0;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section-title h2 {
+    font-size: 2.5em;
+    color: #5B8DF5;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* About Section */
+.about-content p {
+    font-size: 1.3em;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Features Section */
+.feature-icon {
+    font-size: 2.5rem;
+    color: #1e3a8a; /* El azul oscuro de tu marca */
+    margin-bottom: 1rem;
+  }
+
+/* Contact Section */
+#contact {
+    background-image: url('/images/pexels-caseygeneallen-16023.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* Capa oscura encima de la imagen para mejorar legibilidad */
+#contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+/* Eleva el contenido por encima del fondo */
+#contact .section-title,
+#contact .contact-content {
+    position: relative;
+    z-index: 1;
+}
+.contact-btn {
+    background-color: #10b981; /* Verde menta más visible */
+}
+
+.social-icon {
+    color: white;
+}
+
+.social-icon:hover {
+    color: #3b82f6;
+}
+
+#contact .section-title h2 {
+    color:white
+}
+
+
+  
+/* Footer */
+footer {
+    background-color: #1e3a8a; /* El mismo azul de tu marca */
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+footer p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #3b82f6; /* Azul más claro al hacer hover */
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+.login-btn {
+    background-color: #3b82f6;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #2563eb; /* Un azul más oscuro */
+}
+
+.register-btn {
+    background-color: #10b981;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #059669; /* Verde más oscuro */
+}
+
+
+/* Button Styles */
+.btn {
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+/* Animación de aparición */
+.section-title,
+.feature-item,
+.about-content,
+.contact-content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

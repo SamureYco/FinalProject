@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register - Student Mentoring Platform</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <header class="register-header">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Mentoría Lumen Logo">
+            <h1>Mentoría Lumen</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="register">
+        <div class="form-container">
+            <h2>Create an Account</h2>
+            <form id="register-form" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit" class="cta-button">Register</button>
+            </form>
+        </div>
+    </section>
+    <script src="/js/register.js"></script>
+
+    <footer>
+        <p>&copy; 2025 Student Mentoring Platform | All rights reserved.</p>
+    </footer>
+</body>
+</html>

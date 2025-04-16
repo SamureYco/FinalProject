@@ -1,0 +1,136 @@
+/* Mejorando el header */
+.register-header {
+    background-color: #222;
+    color: white;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-container img {
+    height: 40px;
+}
+
+.logo-container h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.register-header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+}
+
+.register-header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-header nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Register Page Styling */
+
+#register {
+    min-height: 100vh; /* Asegura que ocupe toda la pantalla */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 4rem 2rem;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-container {
+    position: relative;
+    z-index: 2;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.form-container {
+    background-color: #ffffff; /* Fondo blanco para el formulario */
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.form-container h2 {
+    color: #1e3a8a; /* Título en azul */
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #374151; /* Gris oscuro */
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #d1d5db; /* Gris suave */
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #374151;
+}
+
+input:focus {
+    outline: none;
+    border-color: #10b981; /* Verde menta al hacer foco */
+    box-shadow: 0 0 5px rgba(16, 185, 129, 0.5);
+}
+
+button.cta-button {
+    background-color: #10b981; /* Verde menta */
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button.cta-button:hover {
+    background-color: #3b82f6; /* Azul más claro al hacer hover */
+}
+
+footer {
+    background-color: #1e3a8a; /* Azul profundo */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative; /* Cambié de 'fixed' a 'relative' */
+    bottom: 0;
+    width: 100%;
+    margin-top: 3rem; /* Agregado para dar espacio arriba */
+}

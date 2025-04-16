@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de Usuario - Mentoría Lumen</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/dashbord.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo Mentoría Lumen">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="dashbord.html">Inicio</a></li>
+        <li><a href="profile.html">Mi perfil</a></li>
+        <li><a href="resources.html">Recursos</a></li>
+        <li><a href="mentorias.html">Mis mentorías</a></li>
+        <li><a href="#" class="logoutButton">Cerrar sesión</a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <section class="dashboard-welcome">
+    <h2 id="nombre-usuario">¡Bienvenido a tu panel!</h2>
+    <p>Aquí puedes gestionar tus sesiones, acceder a recursos y recibir ayuda personalizada.</p>
+  </section>
+
+  <section class="dashboard-sections">
+    <div class="dashboard-card">
+      <h3>Mis Sesiones</h3>
+      <p>Revisa y gestiona tus sesiones agendadas con tu mentor.</p>
+      <a href="sessions.html" class="cta-button">Ver sesiones</a>
+    </div>
+
+    <div class="dashboard-card">
+      <h3>Recursos Educativos</h3>
+      <p>Accede a todo el contenido exclusivo para mejorar tus estudios.</p>
+      <a href="resources.html" class="cta-button">Ver recursos</a>
+    </div>
+
+    <div class="dashboard-card">
+      <h3>Solicitar nueva mentoría</h3>
+      <p>¿Tienes una nueva duda o tema que tratar? Solicita una nueva sesión.</p>
+      <a href="solicitar.html" class="cta-button">Solicitar</a>
+    </div>
+  </section>
+  <script>
+     // Verifica si el usuario está logueado
+     const storedEmail = localStorage.getItem("userEmail");
+    const storedPassword = localStorage.getItem("userPassword");
+
+    if (!storedEmail || !storedPassword) {
+        // Si no está logueado, redirige al login
+        window.location.href = "login.html";
+    }
+    
+  </script> 
+  <script src="js/logout.js"></script>
+ 
+
+  <footer>
+    <p>&copy; 2025 Mentoría Lumen | Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

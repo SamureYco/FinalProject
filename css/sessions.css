@@ -1,0 +1,61 @@
+.sessions-header {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .sessions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .session-item {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+  }
+  
+  .session-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .session-item p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .session-item a {
+    background-color: #1e88e5;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .session-item a:hover {
+    background-color: #1565c0;
+  }
+  
+  .new-session {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .cta-button {
+    background-color: #1e88e5;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .cta-button:hover {
+    background-color: #1565c0;
+  }
+  
